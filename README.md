@@ -1,0 +1,137 @@
+<!--
+
+@license Apache-2.0
+
+Copyright (c) 2018 The Stdlib Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+-->
+
+# Square Root of Epsilon
+
+> [Square root][@stdlib/math/base/special/sqrt] of [double-precision floating-point epsilon][@stdlib/constants/float64/eps].
+
+<section class="installation">
+
+## Installation
+
+```bash
+npm install @stdlib/constants-float64-sqrt-eps
+```
+
+</section>
+
+<section class="usage">
+
+## Usage
+
+```javascript
+var FLOAT64_SQRT_EPSILON = require( '@stdlib/constants-float64-sqrt-eps' );
+```
+
+#### FLOAT64_SQRT_EPSILON
+
+[Square root][@stdlib/math/base/special/sqrt] of [double-precision floating-point epsilon][@stdlib/constants/float64/eps].
+
+```javascript
+var bool = ( FLOAT64_SQRT_EPSILON === 0.14901161193847656e-7 );
+// returns true
+```
+
+</section>
+
+<!-- /.usage -->
+
+<section class="examples">
+
+## Examples
+
+<!-- eslint no-undef: "error" -->
+
+```javascript
+var abs = require( '@stdlib/math-base-special-abs' );
+var max = require( '@stdlib/math-base-special-max' );
+var randu = require( '@stdlib/random-base-randu' );
+var FLOAT64_SQRT_EPSILON = require( '@stdlib/constants-float64-sqrt-eps' );
+
+var bool;
+var a;
+var b;
+var i;
+
+function isApprox( a, b ) {
+    var delta;
+    var tol;
+
+    delta = abs( a - b );
+    tol = FLOAT64_SQRT_EPSILON * max( abs( a ), abs( b ) );
+
+    return ( delta <= tol );
+}
+
+for ( i = 0; i < 100; i++ ) {
+    a = randu() * 10.0;
+    b = a + (randu()*5.0e-7) - 2.5e-7;
+    bool = isApprox( a, b );
+    console.log( '%d %s approximately equal to %d. Delta: %d.', a, ( bool ) ? 'is' : 'is not', b, abs( a - b ) );
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+
+<section class="main-repo" >
+
+* * *
+
+## Notice
+
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+
+For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
+
+---
+
+## License
+
+See [LICENSE][stdlib-license].
+
+
+## Copyright
+
+Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
+
+</section>
+
+<!-- /.stdlib -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="links">
+
+[stdlib]: https://github.com/stdlib-js/stdlib
+
+[stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
+
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/constants-float64-sqrt-eps/main/LICENSE
+
+[@stdlib/math/base/special/sqrt]: https://github.com/stdlib-js/math-base-special-sqrt
+
+[@stdlib/constants/float64/eps]: https://github.com/stdlib-js/constants-float64-eps
+
+</section>
+
+<!-- /.links -->
