@@ -94,6 +94,22 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- /.examples -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/constants/float64/eps`][@stdlib/constants/float64/eps]: difference between one and the smallest value greater than one that can be represented as a double-precision floating-point number.
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 
 <section class="main-repo" >
 
@@ -151,7 +167,11 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [@stdlib/math/base/special/sqrt]: https://github.com/stdlib-js/math-base-special-sqrt
 
+<!-- <related-links> -->
+
 [@stdlib/constants/float64/eps]: https://github.com/stdlib-js/constants-float64-eps
+
+<!-- </related-links> -->
 
 </section>
 
