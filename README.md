@@ -20,7 +20,7 @@ limitations under the License.
 
 # Square Root of Epsilon
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > [Square root][@stdlib/math/base/special/sqrt] of [double-precision floating-point epsilon][@stdlib/constants/float64/eps].
 
@@ -102,7 +102,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## See Also
 
--   [`@stdlib/constants/float64/eps`][@stdlib/constants/float64/eps]: difference between one and the smallest value greater than one that can be represented as a double-precision floating-point number.
+-   <span class="package-name">[`@stdlib/constants/float64/eps`][@stdlib/constants/float64/eps]</span><span class="delimiter">: </span><span class="description">difference between one and the smallest value greater than one that can be represented as a double-precision floating-point number.</span>
 
 </section>
 
@@ -153,8 +153,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/constants-float64-sqrt-eps/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/constants-float64-sqrt-eps?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/constants-float64-sqrt-eps.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/constants-float64-sqrt-eps/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
