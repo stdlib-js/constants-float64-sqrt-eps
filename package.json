@@ -1,0 +1,41 @@
+{
+  "name": "@stdlib/constants-float64-sqrt-eps",
+  "version": "0.0.0",
+  "description": "Square root of double-precision floating-point epsilon.",
+  "license": "Apache-2.0",
+  "main": "./bundle.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/constants-float64-sqrt-eps.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdmath",
+    "constant",
+    "const",
+    "mathematics",
+    "math",
+    "double",
+    "dbl",
+    "floating-point",
+    "float",
+    "float64",
+    "64bit",
+    "64-bit",
+    "ieee754",
+    "epsilon",
+    "eps",
+    "number",
+    "sqrt",
+    "square",
+    "root"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
