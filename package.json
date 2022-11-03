@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/constants-float64-sqrt-eps",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Square root of double-precision floating-point epsilon.",
   "license": "Apache-2.0",
   "author": {
